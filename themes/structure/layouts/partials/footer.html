@@ -1,0 +1,20 @@
+<footer>
+  <div class="footer-container">
+    <span class="logo">
+      <a href="/">
+        {{ $image := resources.Get "images/footer-logo.svg" }}
+        <img src="{{ $image.RelPermalink }}" alt="Logo" />
+      </a>
+    </span>
+    <div>
+      <p>connect with us</p>
+      <span class="logo">
+        <a href="/">
+          {{ $image := resources.Get "images/social.svg" }}
+          <img src="{{ $image.RelPermalink }}" alt="Logo" />
+        </a>
+      </span>
+    </div>
+    <small>All Rights Reserved &copy; {{now.Format "2006"}} Wolfstation.</small>
+  </div>
+</footer>

@@ -1,0 +1,30 @@
+<nav>
+  <div class="nav-bar">
+    <span class="logo main-logo">
+      <a href="/">
+        <!-- <img src="images/logo.svg" width="200" height="100" alt="logo" /> -->
+        {{ $image := resources.Get "images/logo.svg" }}
+        <img src="{{ $image.RelPermalink }}" alt="Logo" />
+      </a>
+    </span>
+    <i class="bx bx-menu-alt-right sidebarOpen"></i>
+
+    <div class="menu">
+      <div class="logo-toggle">
+        <span class="logo">
+          <a href="/">
+            {{ $image := resources.Get "images/logo.svg" }}
+            <img src="{{ $image.RelPermalink }}" alt="Logo" />
+          </a>
+        </span>
+        <i class="bx bx-x sidebarClose"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">about the program</a></li>
+        <li><a href="#">cohorts</a></li>
+        <li><a href="#">testimonials</a></li>
+        <li><a href="#">founder's note</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

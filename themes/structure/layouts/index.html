@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+<div class="hero-banner">
+  <div class="hero-text">
+    <h1>
+      Learn the internals of Data <br />
+      Structures & Algorithm
+    </h1>
+    <h3>
+      At the Wolfstation DSA Program, we believe <br />
+      that fundamentals are forever.
+    </h3>
+    <button class="cta-button">join the next cohort</button>
+  </div>
+</div>
+<div class="hero-separator">
+  {{ $image := resources.Get "images/separator.svg" }}
+  <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+</div>
+<div class="div-program"></div>
+<div class="about-program">
+  <div class="program">
+    <h3>About The Program</h3>
+    <div class="program-details">
+      <div>
+        <p>
+          This program is an introduction to the foundations of software
+          engineering lorem ipsum dolor ipsum lorem ipsum dolor ipsum lorem.
+        </p>
+        <button class="general-btn">
+          Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
+        </button>
+      </div>
+      <div>
+        <div class="program-info">
+          <span>
+            {{ $image := resources.Get "images/book.svg" }}
+            <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+          </span>
+          <p>Weekly Course work</p>
+        </div>
+        <div class="program-info">
+          <span>
+            {{ $image := resources.Get "images/calendar.svg" }}
+            <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+          </span>
+          <p>12-WEEK SCHEDULE</p>
+        </div>
+        <div class="program-info">
+          <span>
+            {{ $image := resources.Get "images/people.svg" }}
+            <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+          </span>
+          <p>PEER COLLABORATION</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonials"></div>
+<div class="volunteers"></div>
+
+{{ end }}
