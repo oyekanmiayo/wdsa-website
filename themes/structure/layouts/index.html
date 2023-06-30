@@ -10,7 +10,7 @@
       At the Wolfstation DSA Program, we believe <br />
       that fundamentals are forever.
     </h3>
-    <button class="cta-button">join the next cohort</button>
+    <button class="cta-button" id="join-cohort">join the next cohort</button>
   </div>
 </div>
 <div class="hero-separator">
@@ -18,7 +18,7 @@
   <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
 </div>
 <div class="div-program"></div>
-<div class="about-program">
+<div class="about-program" id="about">
   <div class="program">
     <h3>About The Program</h3>
     <div class="program-details">
@@ -31,7 +31,7 @@
           Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
         </button>
       </div>
-      <div>
+      <div id="program">
         <div class="program-info">
           <span>
             {{ $image := resources.Get "images/book.svg" }}
@@ -57,7 +57,7 @@
     </div>
   </div>
 </div>
-<div class="testimonials">
+<div class="testimonials" id="testimonials">
   <div class="testimonials-info">
     <h3>Testimonials</h3>
     <p>Hear what our previous participants have to say about the program</p>
@@ -116,7 +116,7 @@
     </button>
   </div>
 </div>
-<div class="volunteers">
+<div class="volunteers" id="volunteers">
   <div class="volunteers-text">
     <h3>Volunteer with us</h3>
     <p>
@@ -127,7 +127,7 @@
       innovators. Join our team today and make a meaningful impact!
     </p>
 
-    <button class="general-btn">
+    <button class="general-btn" id="volunteer">
       Register your interest
       <i class="bx bx-right-arrow-alt right-pointer"></i>
     </button>

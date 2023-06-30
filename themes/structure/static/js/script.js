@@ -17,3 +17,21 @@ body.addEventListener("click", (e) => {
     nav.classList.remove("active");
   }
 });
+
+const navigation = document.querySelector(".menu");
+const navigationHeight = navigation.offsetHeight;
+
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight + "px"
+);
+
+var join = document.getElementById("join-cohort");
+join.addEventListener("click", function () {
+  window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
+});
+
+var volunteer = document.getElementById("volunteer");
+volunteer.addEventListener("click", function () {
+  window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
+});
