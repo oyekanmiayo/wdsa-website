@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="testimonial-container">
+    <section class="testimonials-section">
+        <p>See what others who have taken the program have to say:</p>
+        {{ range .Site.Data.testimonial.testimonials }}
+        <div class="testimonial-item">
+            <div class="quote">
+                {{ $image := resources.Get "images/quote.svg" }}
+                <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+            </div>
+            <div>
+                <p class="message"> {{ .message }} "</p>
+                <h4 class="name">{{ .name }}</h4>
+                <p class="position">{{ .position }}</p>
+            </div>
+        </div>
+        {{ end }}
+    </section>
+</div>
+{{ .Content }}
+{{ end }}
