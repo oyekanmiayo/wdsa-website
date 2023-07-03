@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Wolfstation DSA Program'
 theme = "structure"
 [mediaTypes."image/svg+xml"]
 suffixes = ["svg"]
