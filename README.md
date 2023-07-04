@@ -1,2 +1,7 @@
 # wdsa-website
-Wolfstation DSA Website
+
+To run 
+
+```
+hugo server --config=hugo.toml
+```
