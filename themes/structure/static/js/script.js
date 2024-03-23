@@ -36,7 +36,7 @@ volunteer.addEventListener("click", function () {
   window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
 });
 
-var volunteer = document.getElementById("read-all");
-volunteer.addEventListener("click", function () {
-  window.open("/testimonials");
-});
+// var volunteer = document.getElementById("read-all");
+// volunteer.addEventListener("click", function () {
+//   window.open("/testimonials");
+// });

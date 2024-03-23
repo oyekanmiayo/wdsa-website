@@ -1,0 +1,13 @@
+.schedule-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+th, td {
+    padding: 8px;
+}
