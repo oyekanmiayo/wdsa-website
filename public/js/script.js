@@ -26,17 +26,54 @@ document.documentElement.style.setProperty(
   navigationHeight + "px"
 );
 
-var join = document.getElementById("join-cohort");
-join.addEventListener("click", function () {
-  window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
-});
+// var join = document.getElementById("join-cohort");
+// join.addEventListener("click", function () {
+//   window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
+// });
 
-var volunteer = document.getElementById("volunteer");
-volunteer.addEventListener("click", function () {
-  window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
-});
-
-// var volunteer = document.getElementById("read-all");
+// var volunteer = document.getElementById("volunteer");
 // volunteer.addEventListener("click", function () {
+//   window.open("https://forms.gle/mXLRLAVggfByJWR17", "_blank");
+// });
+
+// var learn = document.getElementById("learn-more");
+// learn.addEventListener("click", function () {
+//   window.open("/schedule");
+// });
+
+// var read = document.getElementById("read-all");
+// console.log(read);
+// read.addEventListener("click", function () {
 //   window.open("/testimonials");
+// });
+
+const accordion = document.getElementsByClassName("accordion");
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    console.log("clicked");
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var accordions = document.getElementsByClassName("accordion");
+//   console.log("why isn't my accordion working???")
+//   for (var i = 0; i < accordions.length; i++) {
+//       accordions[i].addEventListener("click", function() {
+//           this.classList.toggle("active");
+//           var panel = this.nextElementSibling;
+//           if (panel.style.maxHeight) {
+//               panel.style.maxHeight = null;
+//           } else {
+//               panel.style.maxHeight = panel.scrollHeight + "px";
+//           }
+//       });
+//   }
 // });

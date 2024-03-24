@@ -11,11 +11,12 @@
     width: 100%;
     min-height: 100vh;
     height: auto;
-    background-image: url("/images/background-image-2.png");
+    background-color: var(--body-color);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    flex-direction: rowS;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
@@ -23,7 +24,7 @@
     /* z-index: 0; */
   }
 
-  .founders-section {
+  .founders-letter {
     /* background-image: url("/images/background-image.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,32 +33,30 @@
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    width: 60%;
+    width: 45%;
     gap: 28px;
-    color: var(--text-color);
-  
+    color: var(--text-color); 
     padding: 1rem;
   }
 
+  .portrait {
+    padding: 1rem;
+    margin-right: 5rem;
+  }
 
+  @media (max-width: 768px) {
+    .founders-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
 
-  
+    .portrait {
+        padding-right: 0; 
+        margin-bottom: 20px; 
+    }
 
-/* .main-container h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
-/* .volunteers {
-    width: 100%;
-    min-height: 90vh;
-    height: auto;
-    background-color: var(--body-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-} */
+    .founders-letter {
+        width: 80%; 
+        text-align: center; 
+    }
+}

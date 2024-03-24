@@ -96,6 +96,7 @@ nav .nav-bar .sidebarOpen {
 .nav-links li a {
   text-transform: uppercase;
   font-size: smaller;
+  letter-spacing: 2px;
   position: relative;
   text-decoration: none;
   color: var(--text-color);
