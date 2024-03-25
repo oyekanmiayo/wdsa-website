@@ -26,3 +26,15 @@
     navigationHeight + "px"
   );
   
+  
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav-links li a");
+navLinks.forEach(link => {
+  // Check if the link's href matches the current path
+  if (link.getAttribute('href')+"/" === currentPath) {
+    console.log("here")
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
+});

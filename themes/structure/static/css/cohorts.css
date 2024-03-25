@@ -41,11 +41,6 @@
     outline: none;
 }
 
-
-/* .active, .accordion:hover {
-    background-color:  #162e30;
-  } */
-
 .accordion:after{
     content: '\02039';
     transform: rotate(270deg);
@@ -56,7 +51,7 @@
     transition: 0.4s;
 } 
 
-.active:after{
+.accordion.active::after{
     content: '\02039';
     transform: rotate(90deg);
     float: right;
