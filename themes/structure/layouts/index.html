@@ -1,3 +1,8 @@
+{{ define "header" }}
+  {{- partial "header-2.html" . -}}
+{{ end }}
+
+
 {{ define "main" }}
 
 <div class="hero-banner">
@@ -136,4 +141,26 @@
   </div>
 </div>
 
+<script>
+    var join = document.getElementById("join-cohort");
+  join.addEventListener("click", function () {
+    window.open("https://forms.gle/pRzma7VekACqhQCp8", "_blank");
+  });
+
+  var volunteer = document.getElementById("volunteer");
+  volunteer.addEventListener("click", function () {
+    window.open("https://forms.gle/mqY6DryLbtVhXrbS7", "_blank");
+  });
+
+  var learn = document.getElementById("learn-more");
+  learn.addEventListener("click", function () {
+    window.open("/schedule");
+  });
+
+  var read = document.getElementById("read-all");
+  console.log(read);
+  read.addEventListener("click", function () {
+    window.open("/testimonials");
+  });
+</script>
 {{ end }}

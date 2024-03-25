@@ -138,6 +138,8 @@ footer .footer-container {
   height: 100%;
   width: 100%;
   background-color: var(--text-color);
+  color: var(--text-cta-color);
+  font-weight: bold;
   padding: 2rem 1.875rem;
   align-items: center;
 }

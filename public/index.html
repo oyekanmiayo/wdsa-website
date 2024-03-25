@@ -16,38 +16,40 @@
   />
 </head>
 <body>
-    <div class="container"><nav>
-  <div class="nav-bar">
-    <span class="logo main-logo">
-      <a href="/">
-        
-        
-        <img src="/images/logo.svg" alt="Logo" />
-      </a>
-    </span>
-    <i class="bx bx-menu-alt-right sidebarOpen"></i>
-
-    <div class="menu">
-      <div class="logo-toggle">
-        <span class="logo">
-          <a href="/">
-            
-            <img src="/images/logo.svg" alt="Logo" />
-          </a>
-        </span>
-        <i class="bx bx-x sidebarClose"></i>
+    <div class="container">
+      <nav>
+    <div class="nav-bar">
+      <span class="logo main-logo">
+        <a href="/">
+          
+          
+          <img src="/images/logo.svg" alt="Logo" />
+        </a>
+      </span>
+      <i class="bx bx-menu-alt-right sidebarOpen"></i>
+  
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo">
+            <a href="/">
+              
+              <img src="/images/logo.svg" alt="Logo" />
+            </a>
+          </span>
+          <i class="bx bx-x sidebarClose"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">about the program</a></li>
+          <li><a href="/cohorts">cohorts</a></li>
+          <li><a href="#testimonials">testimonials</a></li>
+          <li><a href="/founders-letter">founder's note</a></li>
+          <li><a href="/schedule">schedule</a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li><a href="/#about">about the program</a></li>
-        <li><a href="/cohorts">cohorts</a></li>
-        <li><a href="/#testimonials">testimonials</a></li>
-        <li><a href="/founders-letter">founder's note</a></li>
-        <li><a href="/schedule">schedule</a></li>
-      </ul>
     </div>
-  </div>
-</nav>
-<main>
+  </nav>
+  
+      <main>
         <div id="content">
 
 <div class="hero-banner">
@@ -186,6 +188,28 @@
   </div>
 </div>
 
+<script>
+    var join = document.getElementById("join-cohort");
+  join.addEventListener("click", function () {
+    window.open("https://forms.gle/pRzma7VekACqhQCp8", "_blank");
+  });
+
+  var volunteer = document.getElementById("volunteer");
+  volunteer.addEventListener("click", function () {
+    window.open("https://forms.gle/mqY6DryLbtVhXrbS7", "_blank");
+  });
+
+  var learn = document.getElementById("learn-more");
+  learn.addEventListener("click", function () {
+    window.open("/schedule");
+  });
+
+  var read = document.getElementById("read-all");
+  console.log(read);
+  read.addEventListener("click", function () {
+    window.open("/testimonials");
+  });
+</script>
 </div>
       </main><footer>
   <div class="footer-container">
