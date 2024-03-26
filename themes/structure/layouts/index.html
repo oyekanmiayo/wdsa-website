@@ -1,3 +1,8 @@
+{{ define "header" }}
+  {{- partial "header-2.html" . -}}
+{{ end }}
+
+
 {{ define "main" }}
 
 <div class="hero-banner">
@@ -10,14 +15,14 @@
       At the Wolfstation DSA Program, we believe <br />
       that fundamentals are forever.
     </h3>
-    <button class="cta-button" id="join-cohort">join the next cohort</button>
+    <button class="cta-button" id="join-cohort">Join this cohort</button>
   </div>
 </div>
 <div class="hero-separator">
   {{ $image := resources.Get "images/separator.svg" }}
   <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
 </div>
-<div class="div-program"></div>
+<div class="div-program">
 <div class="about-program" id="about">
   <div class="program">
     <h3>About The Program</h3>
@@ -25,9 +30,10 @@
       <div>
         <p>
           This program is an introduction to the foundations of software
-          engineering lorem ipsum dolor ipsum lorem ipsum dolor ipsum lorem.
+          engineering. Our goal is to equip software engineers with a strong foundation in data structures and algorithms (DSAs) 
+          to not only succeed in technical interviews but also excel in their software engineering careers.
         </p>
-        <button class="general-btn">
+        <button class="general-btn" id="learn-more">
           Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
         </button>
       </div>
@@ -56,6 +62,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 <div class="testimonials" id="testimonials">
   <div class="testimonials-info">
@@ -134,4 +141,26 @@
   </div>
 </div>
 
+<script>
+    var join = document.getElementById("join-cohort");
+  join.addEventListener("click", function () {
+    window.open("https://forms.gle/pRzma7VekACqhQCp8", "_blank");
+  });
+
+  var volunteer = document.getElementById("volunteer");
+  volunteer.addEventListener("click", function () {
+    window.open("https://forms.gle/mqY6DryLbtVhXrbS7", "_blank");
+  });
+
+  var learn = document.getElementById("learn-more");
+  learn.addEventListener("click", function () {
+    window.open("/schedule");
+  });
+
+  var read = document.getElementById("read-all");
+  console.log(read);
+  read.addEventListener("click", function () {
+    window.open("/testimonials");
+  });
+</script>
 {{ end }}

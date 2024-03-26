@@ -1,0 +1,41 @@
+
+
+.schedule-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding-top: 20px; */
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.watermark{
+    position: fixed;
+    top: 50%;
+    left: 0px;
+}
+
+.schedule-hero {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding-bottom: 40px;
+}
+
+.table-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th, td {
+    padding: 8px;
+}
