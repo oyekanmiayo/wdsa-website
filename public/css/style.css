@@ -15,6 +15,7 @@ html,
 body {
   background-color: var(--body-color);
   color: var(--nav-color);
+  width: 100%;
   font-family: "Titillium Web", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -99,7 +100,7 @@ nav .nav-bar .sidebarOpen {
   letter-spacing: 2px;
   position: relative;
   text-decoration: none;
-  color: #888;
+  color: #fff;
   padding: 10px;
 }
 
@@ -121,9 +122,9 @@ nav .nav-bar .sidebarOpen {
   opacity: 1;
 }
 
-.nav-links li a.active {
+/* .nav-links li a.active {
   color: #fff; 
-}
+} */
 
 
 footer {
@@ -293,7 +294,7 @@ footer .footer-container {
   width: 100%;
   min-height: 20vh;
   height: auto;
-  background-image: url("/images/background-image.png");
+  background-image: url("/images/background-image-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -305,7 +306,7 @@ footer .footer-container {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  background-image: url("/images/background-image.png");
+  background-image: url("/images/background-image-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
