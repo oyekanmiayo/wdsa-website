@@ -312,6 +312,7 @@ footer .footer-container {
   align-items: center;
   z-index: 100;
   position: absolute;
+  overflow-x: hidden;
   top: 0;
 }
 
@@ -429,7 +430,7 @@ footer .footer-container {
   }
 
   .program {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem ;
   }
 
   .program-details .general-btn {
@@ -445,6 +446,12 @@ footer .footer-container {
 @media (min-width:768px) {
   .hero-separator img {
     width: 100%;
+  }
+}
+
+@media (min-width: 1500px){
+  .div-program {
+    padding-top: 220px;
   }
 }
 
