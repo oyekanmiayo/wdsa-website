@@ -19,13 +19,13 @@
 }
 
 .schedule-hero {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center; 
+    padding: 40px 0;
 }
 
 .table-container {
