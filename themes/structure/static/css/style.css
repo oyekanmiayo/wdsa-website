@@ -7,11 +7,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
+  overflow-y: scroll;
 }
 
-html,
+html, 
 body {
   background-color: var(--body-color);
   color: var(--nav-color);
@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -281,24 +281,23 @@ footer .footer-container {
   font-size: 18px;
   text-align: center;
   margin-bottom: 1.5rem;
-  line-height: 1.9rem;
+  line-height: 1.5rem;
   word-spacing: 2px;
   letter-spacing: 0.04em;
 }
 
 
 .cta-button {
-  /* background-color: var(--cta-color); */
   background: linear-gradient(93.29deg, #787878 2.44%, rgba(120, 120, 120, 0) 131.15%);
   border: 1px solid #BEBEC5;
-  /* border: 0; */
   padding: 0.7rem 1.7rem;
   cursor: pointer;
   border-radius: 4px;
   color: var(--text-color);
   transition: all 0.3s ease;
   font-size: 13px;
-
+  font-family: Titillium Web;
+  font-weight: 600;
 }
 
 .cta-button:hover {
@@ -378,26 +377,29 @@ footer .footer-container {
 }
 
 .general-btn {
-  padding: 12px 1.5rem;
+  /* padding: 20px 1.5rem; */
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  width: 142px;
+  height: 48px;
   /* background-color: var(--body-color); */
   background-color: transparent;
   color: var(--text-color);
   /* opacity: 0.5; */
   border: 1px solid #787878;
   font-family: "Titillium Web", sans-serif;
-  background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
+  font-size: 16px;
+  /* background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
   background-image: -webkit-radial-gradient(left top, 150px 230px, #000, transparent);
-  background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%);
+  background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%); */
 }
 
 .general-btn i {
-  margin-left: 1rem;
-  font-size: 1.5rem;
+  margin-left: 0.2rem;
+  font-size: 1rem;
 }
 
 .program-info {
@@ -423,6 +425,7 @@ footer .footer-container {
 
   .hero-text p {
     font-size: 13px;
+    line-height: 1.1rem;
   }
 
   .program {
@@ -459,6 +462,8 @@ footer .footer-container {
 
 .testimonials button {
   padding: 14px 1.5rem;
+  /* width: 142px;
+  height: 48px; */
   border-radius: 4px;
   border: 1px solid #d6d6d6;
   display: flex;
@@ -468,12 +473,17 @@ footer .footer-container {
   font-weight: 600;
   background-color: transparent;
   color: var(--body-color);
+  /* font-family: "Titillium Web", sans-serif;
+font-size: 16px; */
+
 }
 
+
 .testimonials i {
+  /* margin-left: 0.2rem; */
   margin-left: 1rem;
   font-size: 1.3rem;
-}
+} 
 
 .testimonials-info {
   width: 80%;
@@ -588,6 +598,11 @@ footer .footer-container {
 
   .program {
     width: 80%;
+  }
+
+  .program-details p {
+    text-align: center;
+    width: 100%;
   }
 }
 
