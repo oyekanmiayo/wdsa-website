@@ -55,13 +55,9 @@ h3 {
 
 .container {
   width: 100%;
-  /* min-height: 100vh;
-  height: auto; */
   display: flex;
   flex-direction: column;
-  /* background-color: var(--text-color); */
   align-items: stretch;
-  /* background-color: black; */
 }
 
 .content{
@@ -73,7 +69,6 @@ nav {
   top: 0;
   left: 0;
   min-height: 5rem;
-  height: auto;
   width: 100%;
   background-color: var(--nav-color);
   z-index: 100;
@@ -323,22 +318,16 @@ footer .footer-container {
 
 .div-program {
   width: 100%;
-  min-height: 20vh;
-  height: auto;
   background-image: url("/images/background-image-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 180px;
   position: relative;
-  /* margin-top: -9rem; */
-  /* z-index: 10; */
 }
 
 .about-program {
   width: 100%;
-  min-height: 100vh;
-  height: auto;
   /* background-image: url("/images/background-image-2.webp"); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -348,6 +337,7 @@ footer .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 6rem;
 }
 
 .program {
@@ -373,30 +363,39 @@ footer .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
-  justify-items: center;
+  justify-items: stretch;
   align-items: flex-start;
 }
 
 .program-details p {
-  font-weight: 200;
-  font-size: 0.9rem;
-  width: 15rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 16px;
+  width: 90%;
   text-align: left;
   margin-bottom: 1rem;
 }
 
+.program-details #program {
+  justify-self: center;
+}
+
 .general-btn {
-  padding: 14px 1.5rem;
+  padding: 12px 1.5rem;
   border-radius: 5px;
-  border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 9px 4px rgba(225, 225, 225, 0.5);
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+  background-color: transparent;
   color: var(--text-color);
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  border: 1px solid #787878;
+  font-family: "Titillium Web", sans-serif;
+  background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
+  background-image: -webkit-radial-gradient(left top, 150px 230px, #000, transparent);
+  background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%);
 }
 
 .general-btn i {
@@ -410,6 +409,11 @@ footer .footer-container {
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
+.program-info p {
+  text-transform: uppercase;
+}
+
 .program-info span {
   margin-right: 1rem;
 }
@@ -450,8 +454,6 @@ footer .footer-container {
 
 .testimonials {
   width: 100%;
-  min-height: 90vh;
-  height: auto;
   background-color: var(--text-color);
   color: var(--text-color);
   display: flex;
@@ -459,6 +461,7 @@ footer .footer-container {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  padding-block: 5rem;
 }
 
 .testimonials button {
@@ -482,8 +485,6 @@ footer .footer-container {
 
 .testimonials-info {
   width: 80%;
-  min-height: 35rem;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -551,19 +552,17 @@ footer .footer-container {
 
 .volunteers {
   width: 100%;
-  min-height: 90vh;
-  height: auto;
   background-color: var(--body-color);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  padding-block: 5rem;
 }
 
 .volunteers-text {
   color: var(--text-color);
   width: 43rem;
-  height: 17.125rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -586,6 +585,9 @@ footer .footer-container {
 }
 
 @media (max-width: 780px) {
+  .volunteers-text h3{
+    font-size: 32px;
+  }
   .volunteers-text button {
     width: 100%;
   }
