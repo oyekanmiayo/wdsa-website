@@ -1,13 +1,17 @@
-
-.container{
+.big-container{
+    height: 88vh;
+    display: flex;
+    place-items: center;
+}
+.cohorts-container{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    width: 100%;
     align-items: center;
     background-color: black;
     color: white;
-    height: 100%;
     position: relative;
+    margin-bottom: 20%;
 }
 
 .watermark{
@@ -16,15 +20,18 @@
     left: 0px;
 }
 
-.container h1{
+.cohorts-container h1{
     padding-top: 5vw;
 }
 
 .accordion-section{
-    width: 55%;
+    width: 100%;
+    max-width: 800px;
     align-items: center;
     font-weight: 400;
-    padding-bottom: 40px;
+    padding: 0 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accordion{
@@ -58,7 +65,7 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 10px 18px 0px;
     left: 10px;
     max-height: 0;
     color: #FFFFFF;
@@ -71,6 +78,6 @@
     display: none;
 }
 
-hr{
+.accordion-section hr{
     border: 1px solid #7E8180;
 }
