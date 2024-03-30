@@ -60,7 +60,7 @@ h3 {
   align-items: stretch;
 }
 
-.content{
+.content {
   width: 100%;
 }
 
@@ -328,12 +328,9 @@ footer .footer-container {
 
 .about-program {
   width: 100%;
-  /* background-image: url("/images/background-image-2.webp"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* margin-top: -3rem; */
-  /* z-index: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,7 +343,6 @@ footer .footer-container {
   width: 60%;
   margin: 0 auto;
   color: var(--text-color);
-  /* background-color: darkorange; */
   padding: 1.5rem 2.5rem;
 }
 
@@ -369,7 +365,8 @@ footer .footer-container {
 
 .program-details p {
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.04em;
+  line-height: 30.42px;
   font-size: 16px;
   width: 90%;
   text-align: left;
@@ -432,10 +429,6 @@ footer .footer-container {
     padding: 1rem 1rem;
   }
 
-  .program-details p {
-    text-align: center;
-  }
-
   .program-details .general-btn {
     width: 100%;
     margin-bottom: 2rem;
@@ -466,15 +459,16 @@ footer .footer-container {
 
 .testimonials button {
   padding: 14px 1.5rem;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 2px 1px rgba(225, 225, 225, 0.5);
+  font-weight: 600;
+  /* box-shadow: 0 0 2px 1px rgba(225, 225, 225, 0.5); */
   background-color: transparent;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   color: var(--body-color);
 }
 
@@ -494,17 +488,23 @@ footer .footer-container {
 }
 
 .testimonials-info::after {
-  content: url("/images/left-quote.png"); /* with class ModalCarrot ??*/
-  position: absolute; /*or absolute*/
-  z-index: 10; /*a number that's more than the modal box*/
+  content: url("/images/left-quote.png");
+  /* with class ModalCarrot ??*/
+  position: absolute;
+  /*or absolute*/
+  z-index: 10;
+  /*a number that's more than the modal box*/
   left: -5%;
   top: -5%;
 }
 
 .testimonials-info::before {
-  content: url("/images/right-quote.png"); /* with class ModalCarrot ??*/
-  position: absolute; /*or absolute*/
-  z-index: 10; /*a number that's more than the modal box*/
+  content: url("/images/right-quote.png");
+  /* with class ModalCarrot ??*/
+  position: absolute;
+  /*or absolute*/
+  z-index: 10;
+  /*a number that's more than the modal box*/
   right: -5%;
   bottom: 7%;
 }
@@ -521,15 +521,15 @@ footer .footer-container {
 
 .testimonies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.9fr));
   gap: 20px;
   margin-bottom: 4rem;
 }
 
 .testimonies-item {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
+  border: 1px solid #BDBDBD;
   border-radius: 8px;
-  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--text-color);
   position: relative;
   z-index: 100;
@@ -537,17 +537,18 @@ footer .footer-container {
 
 .testimonies-item p {
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .testimonies-item__author p {
   margin-bottom: 0.5px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .testimonies-item__author span {
-  font-size: 14px;
-  color: #555;
-  opacity: 0.3;
+  color:#787878;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .volunteers {
@@ -557,7 +558,7 @@ footer .footer-container {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  padding-block: 5rem;
+  padding-block: 10rem;
 }
 
 .volunteers-text {
@@ -585,11 +586,16 @@ footer .footer-container {
 }
 
 @media (max-width: 780px) {
-  .volunteers-text h3{
+  .volunteers-text h3 {
     font-size: 32px;
   }
+
   .volunteers-text button {
     width: 100%;
+  }
+
+  .program {
+    width: 80%;
   }
 }
 
