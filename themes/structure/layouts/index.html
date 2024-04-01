@@ -1,5 +1,5 @@
 {{ define "header" }}
-  {{- partial "header-2.html" . -}}
+{{- partial "header-2.html" . -}}
 {{ end }}
 
 
@@ -8,11 +8,11 @@
 <div class="hero-banner">
   <div class="hero-text">
     <h1>
-      Learn the internals of Data <br />
+      Learn the internals of Data
       Structures & Algorithms
     </h1>
     <p>
-      At the Wolfstation DSA Program, we believe <br />
+      At the Wolfstation DSA Program, we believe
       that fundamentals are forever.
     </p>
     <button class="cta-button" id="join-cohort">Join the next cohort</button>
@@ -23,46 +23,47 @@
     {{ $image := resources.Get "images/separator.svg" }}
     <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
   </div>
-<div class="about-program" id="about">
-  <div class="program">
-    <h3>About The Program</h3>
-    <div class="program-details">
-      <div class="program-details-description">
-        <p>
-          This program is an introduction to the foundations of software
-          engineering. Our goal is to equip software engineers with a strong foundation in data structures and algorithms (DSAs) 
-          to not only succeed in technical interviews but also excel in their software engineering careers.
-        </p>
-        <button class="general-btn" id="learn-more">
-          Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
-        </button>
-      </div>
-      <div id="program">
-        <div class="program-info">
-          <span>
-            {{ $image := resources.Get "images/book.svg" }}
-            <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
-          </span>
-          <p>Weekly Course work</p>
+  <div class="about-program" id="about">
+    <div class="program">
+      <h3>About The Program</h3>
+      <div class="program-details">
+        <div class="program-details-description">
+          <p>
+            This program is an introduction to the foundations of software
+            engineering. Our goal is to equip software engineers with a strong foundation in data structures and
+            algorithms (DSAs)
+            to not only succeed in technical interviews but also excel in their software engineering careers.
+          </p>
+          <button class="general-btn" id="learn-more">
+            Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
+          </button>
         </div>
-        <div class="program-info">
-          <span>
-            {{ $image := resources.Get "images/calendar.svg" }}
-            <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
-          </span>
-          <p>12-WEEK SCHEDULE</p>
-        </div>
-        <div class="program-info">
-          <span>
-            {{ $image := resources.Get "images/people.svg" }}
-            <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
-          </span>
-          <p>PEER COLLABORATION</p>
+        <div id="program">
+          <div class="program-info">
+            <span>
+              {{ $image := resources.Get "images/book.svg" }}
+              <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+            </span>
+            <p>Weekly Course work</p>
+          </div>
+          <div class="program-info">
+            <span>
+              {{ $image := resources.Get "images/calendar.svg" }}
+              <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+            </span>
+            <p>12-WEEK SCHEDULE</p>
+          </div>
+          <div class="program-info">
+            <span>
+              {{ $image := resources.Get "images/people.svg" }}
+              <img src="{{ $image.RelPermalink }}" alt="Blue separator image" />
+            </span>
+            <p>PEER COLLABORATION</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 <div class="testimonials" id="testimonials">
   <div class="testimonials-info">
@@ -118,7 +119,7 @@
         </div>
       </div>
     </div>
-    <button id="read-all">
+    <button id="read-all" class="general-btn">
       Read all <i class="bx bx-right-arrow-alt right-pointer"></i>
     </button>
   </div>
@@ -142,7 +143,7 @@
 </div>
 <!-- </div> -->
 <script>
-    var join = document.getElementById("join-cohort");
+  var join = document.getElementById("join-cohort");
   join.addEventListener("click", function () {
     window.open("https://forms.gle/pRzma7VekACqhQCp8", "_blank");
   });
