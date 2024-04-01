@@ -3,7 +3,6 @@ const nav = document.querySelector("nav");
 const sidebarOpen = document.querySelector(".sidebarOpen");
 const sidebarClose = document.querySelector(".sidebarClose");
 
-// script to toggle sidebar
 sidebarOpen.addEventListener("click", () => {
   nav.classList.add("active");
 });

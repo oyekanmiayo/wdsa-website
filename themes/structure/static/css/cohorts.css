@@ -1,5 +1,5 @@
 .big-container{
-    height: 88vh;
+    min-height: 88vh;
     display: flex;
     place-items: center;
 }
@@ -12,7 +12,7 @@
     color: white;
     position: relative;
     margin-bottom: 20%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 .watermark{
@@ -22,12 +22,13 @@
 }
 
 .cohorts-container h1{
+    font-size: 2.5rem;
     padding-top: 5vw;
 }
 
 .accordion-section{
     width: 100%;
-    max-width: 800px;
+    max-width: 887px;
     align-items: center;
     font-weight: 400;
     padding: 0 20px 40px;
@@ -42,7 +43,7 @@
     border: none;
     width: 100%;
     padding: 50px 18px 7px;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: left;
     line-height: 29px;
     transition: 0.4s;
@@ -81,4 +82,14 @@
 
 .accordion-section hr{
     border: 1px solid #7E8180;
+}
+
+@media screen and (max-width: 780px){
+    .cohorts-container h1 {
+        font-size: 2rem;
+    }
+
+    .accordion {
+        font-size: 1rem;    
+    }
 }
