@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    padding: 40px 0;
+    padding: 40px 0 20px;
 }
 
 .schedule-hero h1 {
@@ -40,10 +40,32 @@
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+table {
+    border: 1px solid #787878;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    text-align: left;
+    width: 50%;
+}
+
+table tr {
+    border-bottom: 1px solid #787878;
+}
+
+table thead {
+    background-color: var(--text-color);
+    color: var(--text-cta-color);
+}
+
 th, td {
     padding: 8px;
+}
+
+.schedule-cta {
+    padding: 30px 0;
 }
