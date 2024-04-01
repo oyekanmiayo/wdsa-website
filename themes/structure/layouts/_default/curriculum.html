@@ -1,0 +1,108 @@
+{{ define "main" }}
+
+<div class="schedule-container">
+    <div class="schedule-hero">
+        <h1>Data Structures & Algorithm Program</h1>
+
+        <!-- <hr> -->
+    </div>
+
+    <div class="table-container">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>WEEK</th>
+                    <th>TOPIC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Week 1</td>
+                    <td>Strings, Arrays & Lists</td>
+                </tr>
+
+                <tr>
+                    <td>Week 2</td>
+                    <td>Maps & Sets</td>
+                </tr>
+
+                <tr>
+                    <td>Week 3</td>
+                    <td>LinkedLists</td>
+                </tr>
+
+                <tr>
+                    <td>Week 4</td>
+                    <td>Stacks & Queues</td>
+                </tr>
+
+                <tr>
+                    <td>Week 4</td>
+                    <td>Stacks & Queues</td>
+                </tr>
+
+                <tr>
+                    <td>Week 5</td>
+                    <td>Common Techniques</td>
+                </tr>
+
+                <tr>
+                    <td>Week 6</td>
+                    <td>Trees</td>
+                </tr>
+
+                <tr>
+                    <td>Week 7</td>
+                    <td>Heaps</td>
+                </tr>
+
+                <tr>
+                    <td>Week 8</td>
+                    <td>Common Techniques</td>
+                </tr>
+
+                <tr>
+                    <td>Week 9</td>
+                    <td>Graphs</td>
+                </tr>
+
+                <tr>
+                    <td>Week 10</td>
+                    <td>Tries</td>
+                </tr>
+
+                <tr>
+                    <td>Week 11</td>
+                    <td>Dynamic Programming</td>
+                </tr>
+
+                <tr>
+                    <td>Week 12</td>
+                    <td>Exams & Project Demos</td>
+                </tr>
+
+                <tr>
+                    <td>End</td>
+                    <td>Hackerrank Test & Graduation!</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <div class="schedule-cta">
+        <button class="cta-button" id="current-schedule">Cohort 2023 Schedule</button>
+    </div>  
+
+    </div>
+    <div class="watermark">
+        <img src="/images/watermark.png">
+      </div>  
+</div>
+
+<script>
+    var currentSchedule = document.getElementById("current-schedule");
+    currentSchedule.addEventListener("click", function () {
+        window.open("https://docs.google.com/document/d/1vsvKu85kwHSo4Qtg8u2EU4Hwz2mzKrRgVefm2B22ysw/edit?usp=sharing", "_blank");
+    }); 
+</script>
+
+{{ end }}

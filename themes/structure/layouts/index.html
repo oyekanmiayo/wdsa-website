@@ -1,5 +1,5 @@
 {{ define "header" }}
-  {{- partial "header-2.html" . -}}
+  {{- partial "home-header.html" . -}}
 {{ end }}
 
 
@@ -154,7 +154,7 @@
 
   var learn = document.getElementById("learn-more");
   learn.addEventListener("click", function () {
-    window.open("/schedule");
+    window.open("/curriculum");
   });
 
   var read = document.getElementById("read-all");
