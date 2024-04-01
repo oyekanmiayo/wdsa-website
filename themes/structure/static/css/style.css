@@ -432,7 +432,7 @@ footer .footer-container {
   }
 
   .program-details .general-btn {
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
   }
 
   .logo.main-logo img {

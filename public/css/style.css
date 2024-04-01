@@ -432,8 +432,7 @@ footer .footer-container {
   }
 
   .program-details .general-btn {
-    width: 100%;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
   }
 
   .logo.main-logo img {
@@ -595,9 +594,9 @@ footer .footer-container {
     font-size: 32px;
   }
 
-  .volunteers-text button {
+  /* .volunteers-text button {
     width: 100%;
-  }
+  } */
 
   .program {
     width: 80%;
