@@ -43,7 +43,7 @@
           <li><a href="/cohorts">cohorts</a></li>
           <li><a href="#testimonials">testimonials</a></li>
           <li><a href="/founders-letter">founder's note</a></li>
-          <li><a href="/curriculum">curriculum</a></li>
+          <li><a href="/curriculum">schedule</a></li>
         </ul>
       </div>
     </div>
@@ -55,11 +55,11 @@
 <div class="hero-banner">
   <div class="hero-text">
     <h1>
-      Learn the internals of Data <br />
+      Learn the internals of Data
       Structures & Algorithms
     </h1>
     <p>
-      At the Wolfstation DSA Program, we believe <br />
+      At the Wolfstation DSA Program, we believe
       that fundamentals are forever.
     </p>
     <button class="cta-button" id="join-cohort">Join the next cohort<i class="bx bx-right-arrow-alt right-pointer"></i></button>
@@ -70,46 +70,47 @@
     
     <img src="/images/separator.svg" alt="Blue separator image" />
   </div>
-<div class="about-program" id="about">
-  <div class="program">
-    <h3>About The Program</h3>
-    <div class="program-details">
-      <div class="program-details-description">
-        <p>
-          This program is an introduction to the foundations of software
-          engineering. Our goal is to equip software engineers with a strong foundation in data structures and algorithms (DSAs) 
-          to not only succeed in technical interviews but also excel in their software engineering careers.
-        </p>
-        <button class="general-btn" id="learn-more">
-          Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
-        </button>
-      </div>
-      <div id="program">
-        <div class="program-info">
-          <span>
-            
-            <img src="/images/book.svg" alt="Blue separator image" />
-          </span>
-          <p>Weekly Course work</p>
+  <div class="about-program" id="about">
+    <div class="program">
+      <h3>About The Program</h3>
+      <div class="program-details">
+        <div class="program-details-description">
+          <p>
+            This program is an introduction to the foundations of software
+            engineering. Our goal is to equip software engineers with a strong foundation in data structures and
+            algorithms (DSAs)
+            to not only succeed in technical interviews but also excel in their software engineering careers.
+          </p>
+          <button class="general-btn" id="learn-more">
+            Learn more<i class="bx bx-right-arrow-alt right-pointer"></i>
+          </button>
         </div>
-        <div class="program-info">
-          <span>
-            
-            <img src="/images/calendar.svg" alt="Blue separator image" />
-          </span>
-          <p>12-WEEK SCHEDULE</p>
-        </div>
-        <div class="program-info">
-          <span>
-            
-            <img src="/images/people.svg" alt="Blue separator image" />
-          </span>
-          <p>PEER COLLABORATION</p>
+        <div id="program">
+          <div class="program-info">
+            <span>
+              
+              <img src="/images/book.svg" alt="Blue separator image" />
+            </span>
+            <p>Weekly Course work</p>
+          </div>
+          <div class="program-info">
+            <span>
+              
+              <img src="/images/calendar.svg" alt="Blue separator image" />
+            </span>
+            <p>12-WEEK SCHEDULE</p>
+          </div>
+          <div class="program-info">
+            <span>
+              
+              <img src="/images/people.svg" alt="Blue separator image" />
+            </span>
+            <p>PEER COLLABORATION</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 <div class="testimonials" id="testimonials">
   <div class="testimonials-info">
@@ -165,7 +166,7 @@
         </div>
       </div>
     </div>
-    <button id="read-all">
+    <button id="read-all" class="general-btn">
       Read all <i class="bx bx-right-arrow-alt right-pointer"></i>
     </button>
   </div>
@@ -188,7 +189,7 @@
 </div>
 
 <script>
-    var join = document.getElementById("join-cohort");
+  var join = document.getElementById("join-cohort");
   join.addEventListener("click", function () {
     window.open("https://forms.gle/pRzma7VekACqhQCp8", "_blank");
   });
@@ -231,47 +232,7 @@
   </div>
 </footer>
 </div>
-  <script>
-    const body = document.querySelector("body");
-    const nav = document.querySelector("nav");
-    const sidebarOpen = document.querySelector(".sidebarOpen");
-    const sidebarClose = document.querySelector(".sidebarClose");
-
-    sidebarOpen.addEventListener("click", () => {
-      nav.classList.add("active");
-    });
-
-    body.addEventListener("click", (e) => {
-      let clickedElement = e.target;
-      if (
-        !clickedElement.classList.contains("sidebarOpen") &&
-        !clickedElement.classList.contains("menu")
-      ) {
-        nav.classList.remove("active");
-      }
-    });
-
-    const navigation = document.querySelector(".menu");
-    const navigationHeight = navigation.offsetHeight;
-
-    document.documentElement.style.setProperty(
-      "--scroll-padding",
-      navigationHeight + "px"
-    );
-
-    const currentPath = window.location.pathname;
-    const navLinks = document.querySelectorAll(".nav-links li a");
-    navLinks.forEach((link) => {
-      
-      if (link.getAttribute("href") + "/" === currentPath) {
-        console.log("here");
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-
-  </script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

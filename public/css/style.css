@@ -211,6 +211,7 @@ footer .footer-container {
     display: block;
     margin-top: 1.25rem;
     color: var(--text-color);
+    font-size: 16px;
   }
 
   .nav-links li a::before {
@@ -265,12 +266,13 @@ footer .footer-container {
 }
 
 .hero-text h1 {
-  font-weight: 550;
+  font-weight: 600;
   text-align: center;
   font-size: 35px;
   margin: 90px 0 20px;
   line-height: 45px;
   letter-spacing: 0.04em;
+  max-width: 600px;
 }
 
 
@@ -279,9 +281,10 @@ footer .footer-container {
   font-size: 18px;
   text-align: center;
   margin-bottom: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 1.875rem;
   word-spacing: 2px;
   letter-spacing: 0.04em;
+  max-width: 400px;
 }
 
 
@@ -293,7 +296,7 @@ footer .footer-container {
   border-radius: 4px;
   color: var(--text-color);
   transition: all 0.3s ease;
-  font-size: 13px;
+  font-size: 16px;
   font-family: Titillium Web;
   font-weight: 600;
   text-decoration: none;
@@ -347,8 +350,8 @@ footer .footer-container {
 .program h3 {
   letter-spacing: 1px;
   word-spacing: 4px;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 35px;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -365,8 +368,7 @@ footer .footer-container {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 30.42px;
-  font-size: 16px;
-  width: 90%;
+  font-size: 18px;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -376,7 +378,6 @@ footer .footer-container {
 }
 
 .general-btn {
-  /* padding: 20px 1.5rem; */
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -384,16 +385,11 @@ footer .footer-container {
   cursor: pointer;
   width: 142px;
   height: 48px;
-  /* background-color: var(--body-color); */
+  font-size: 16px;
   background-color: transparent;
   color: var(--text-color);
-  /* opacity: 0.5; */
   border: 1px solid #787878;
   font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
-  /* background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
-  background-image: -webkit-radial-gradient(left top, 150px 230px, #000, transparent);
-  background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%); */
 }
 
 .general-btn i {
@@ -403,9 +399,9 @@ footer .footer-container {
 
 .program-info {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .program-info p {
@@ -420,11 +416,21 @@ footer .footer-container {
   .hero-text h1 {
     font-size: 1.5rem;
     line-height: 36px;
+    padding-inline: 0.2rem;
   }
 
   .hero-text p {
+    font-size: 14px;
+    padding-inline: 1rem;
+    line-height: 1.3rem;
+    max-width: 350px;
+  }
+  .cta-button {
     font-size: 13px;
-    line-height: 1.1rem;
+  }
+
+  .program h3 {
+    font-size: 24px;
   }
 
   .program {
@@ -433,6 +439,7 @@ footer .footer-container {
 
   .program-details .general-btn {
     margin: 0 auto 2rem;
+    font-size: 13px;
   }
 
   .logo.main-logo img {
@@ -511,11 +518,13 @@ footer .footer-container {
 }
 
 .testimonials-info h3 {
-  font-size: 2.3rem;
+  font-size: 35px;
   color: var(--body-color);
+  margin-bottom: 16px;
 }
 
 .testimonials-info p {
+  font-size: 18px;
   margin-bottom: 2rem;
   color: var(--body-color);
 }
@@ -538,6 +547,7 @@ footer .footer-container {
 .testimonies-item p {
   margin-bottom: 1rem;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .testimonies-item__author p {
@@ -572,7 +582,7 @@ footer .footer-container {
 }
 
 .volunteers-text h3 {
-  font-size: 2.3rem;
+  font-size: 35px;
   margin-bottom: 1.2rem;
 }
 
@@ -581,7 +591,7 @@ footer .footer-container {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 30.42px;
-  font-size: 16px;
+  font-size: 18px;
   width: 80%;
   text-align: center;
   margin-bottom: 2rem;
@@ -594,12 +604,32 @@ footer .footer-container {
 
 @media (max-width: 780px) {
   .volunteers-text h3 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
-  /* .volunteers-text button {
-    width: 100%;
-  } */
+  .volunteers-text p {
+    font-size: 14px;
+  }
+
+  .testimonials-info h3 {
+    font-size: 24px;
+  }
+
+  .testimonials-info p {
+    font-size: 14px;
+  }
+
+  .testimonies-item p {
+    font-size: 14px;
+  }
+
+  .testimonies-item__author p, span {
+    font-size: 13px;
+  }
+
+  .testimonials button {
+    font-size: 13px;
+  }
 
   .program {
     width: 80%;
@@ -608,6 +638,11 @@ footer .footer-container {
   .program-details p {
     text-align: center;
     width: 100%;
+    font-size: 14px;
+  }
+  
+  .footer-container p {
+    font-size: 14px;
   }
 }
 

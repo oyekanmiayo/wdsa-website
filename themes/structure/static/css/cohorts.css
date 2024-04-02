@@ -22,7 +22,7 @@
 }
 
 .cohorts-container h1{
-    font-size: 2.5rem;
+    font-size: 35px;
     padding-top: 5vw;
 }
 
@@ -43,7 +43,7 @@
     border: none;
     width: 100%;
     padding: 50px 18px 7px;
-    font-size: 1.5rem;
+    font-size: 22px;
     text-align: left;
     line-height: 29px;
     transition: 0.4s;
@@ -86,10 +86,14 @@
 
 @media screen and (max-width: 780px){
     .cohorts-container h1 {
-        font-size: 2rem;
+        font-size: 24px;
     }
 
     .accordion {
-        font-size: 1rem;    
+        font-size: 18px;    
+    }
+
+    .panel p {
+        font-size: 14px;
     }
 }
