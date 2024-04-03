@@ -70,7 +70,17 @@
     <h3>Testimonials</h3>
     <p>Hear what our previous participants have to say about the program</p>
     <div class="testimonies">
+      {{ range first 4 .Site.Data.testimonial.testimonials }}
       <div class="testimonies-item">
+        <p>{{ .message }}</p>
+        <div class="testimonies-item__author">
+          <p>{{ .name }}</p>
+          <span>{{ .position }}</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+      <!-- <div class="testimonies-item">
         <p>
           “For the developers who are avoiding DSAs, it may come back to bite
           you when you least expect it. You better watch out for the next cohort
@@ -81,43 +91,8 @@
           <p>Ehis Edemakhiota</p>
           <span>SWE, Angala Fintech</span>
         </div>
-      </div>
-      <div class="testimonies-item">
-        <p>
-          “For the developers who are avoiding DSAs, it may come back to bite
-          you when you least expect it. You better watch out for the next cohort
-          of <br />
-          @wdsaprogram.”
-        </p>
-        <div class="testimonies-item__author">
-          <p>Ehis Edemakhiota</p>
-          <span>SWE, Angala Fintech</span>
-        </div>
-      </div>
-      <div class="testimonies-item">
-        <p>
-          “For the developers who are avoiding DSAs, it may come back to bite
-          you when you least expect it. You better watch out for the next cohort
-          of <br />
-          @wdsaprogram.”
-        </p>
-        <div class="testimonies-item__author">
-          <p>Ehis Edemakhiota</p>
-          <span>SWE, Angala Fintech</span>
-        </div>
-      </div>
-      <div class="testimonies-item">
-        <p>
-          “For the developers who are avoiding DSAs, it may come back to bite
-          you when you least expect it. You better watch out for the next cohort
-          of <br />
-          @wdsaprogram.”
-        </p>
-        <div class="testimonies-item__author">
-          <p>Ehis Edemakhiota</p>
-          <span>SWE, Angala Fintech</span>
-        </div>
-      </div>
+      </div> -->
+
     </div>
     <button id="read-all" class="general-btn">
       Read all <i class="bx bx-right-arrow-alt right-pointer"></i>
