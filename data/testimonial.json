@@ -1,19 +1,24 @@
 {
   "testimonials": [
     {
-      "message": "For the developers who are avoiding DSAs, it may come back to bite you when you least expect it. You better watch out for the next cohort of @wdsaprogram.",
-      "name": "Ehis Edemakhiota",
-      "position": "SWE, Interswitch"
+      "message": "“The Wolfstation DSA program was a massive boost to my learning in 2022. Through the help of the program, I was able to develop a framework for solving problems, giving me more confidence in my daily work and during technical interviews”",
+      "name": "@ehizman__",
+      "position": "Cohort 2022"
     },
     {
-      "message": "For the developers who are avoiding DSAs, it may come back to bite you when you least expect it. You better watch out for the next cohort of @wdsaprogram.",
-      "name": "Ehis Edemakhiota",
-      "position": "SWE, Angala Fintech"
+      "message": "“Man, I would not lie today's class going over stacks and queues on #WolfstationDSAProgram was fire. There was also a subtle introduction to Breath-First Search Algorithm and Depth-First Search Algorithm.”",
+      "name": "@varsilias",
+      "position": "Cohort 2022"
     },
     {
-      "message": "For the developers who are avoiding DSAs, it may come back to bite you when you least expect it. You better watch out for the next cohort of @wdsaprogram.",
+      "message": "“Before it's too late, I definitely have to post about the #WolfstationDSAProgram class today. Thanks so much @_alternatewolf. Your thought process really taught me a lot”",
+      "name": "@jaey_emmanuel",
+      "position": "Cohort 2022"
+    },
+    {
+      "message": "“For the developers who are avoiding DSAs, it may come back to bite you when you least expect it. You better watch out for the next cohort of @wdsaprogram.”",
       "name": "Ehis Edemakhiota",
-      "position": "SWE, Angala Fintech"
+      "position": "Cohort 2022"
     }
   ]
 }

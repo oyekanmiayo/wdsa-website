@@ -514,7 +514,7 @@ footer .footer-container {
   content: url("/images/right-quote.png"); /* with class ModalCarrot ??*/
   position: absolute; /*or absolute*/
   right: -5%;
-  bottom: 7%;
+  bottom: 5%;
 }
 
 .testimonials-info h3 {

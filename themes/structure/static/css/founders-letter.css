@@ -36,6 +36,11 @@
     padding: 1rem;
   }
 
+  .founders-letter a {
+    color: var(--text-color);
+    text-decoration: underline;
+  }
+
   .portrait {
     padding: 1rem;
     margin-right: 5rem;
@@ -59,6 +64,6 @@
 
     .founders-letter {
         width: 80%; 
-        text-align: center; 
+        text-align: left; 
     }
 }
