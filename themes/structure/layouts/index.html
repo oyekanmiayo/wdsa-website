@@ -70,7 +70,7 @@
     <h3>Testimonials</h3>
     <p>Hear what our previous participants have to say about the program</p>
     <div class="testimonies">
-      {{ range .Site.Data.testimonial.testimonials }}
+      {{ range first 4 .Site.Data.testimonial.testimonials }}
       <div class="testimonies-item">
         <p>{{ .message }}</p>
         <div class="testimonies-item__author">
