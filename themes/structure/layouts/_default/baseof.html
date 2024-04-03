@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  {{- partial "head.html" . -}}
-  <body>
-    <div class="container">
-      {{ block "header" . }}
-        {{- partial "header.html" . -}}
-      {{ end }}
-      <main>
-        <div id="content">{{- block "main" . }}{{- end }}</div>
-      </main>
-      {{- partial "footer.html" . -}}
-    </div>
-    <script src="{{ .Site.BaseURL }}js/script.js"></script>
-  </body>
+{{- partial "head.html" . -}}
+
+<body>
+  <div class="container">
+    {{ block "header" . }}
+    {{- partial "header.html" . -}}
+    {{ end }}
+    <main>
+      <div id="content">{{- block "main" . }}{{- end }}</div>
+    </main>
+    {{- partial "footer.html" . -}}
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
 
 <!DOCTYPE html>

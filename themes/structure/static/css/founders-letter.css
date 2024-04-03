@@ -21,14 +21,11 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 40px;
-    /* z-index: 0; */
   }
 
   .founders-letter {
-    /* background-image: url("/images/background-image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+    letter-spacing: 0.04em;
+    text-align: left;    
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -48,11 +45,16 @@
     .founders-container {
         flex-direction: column; 
         align-items: center; 
+        font-size: 14px;
     }
 
     .portrait {
         padding-right: 0; 
-        margin-bottom: 20px; 
+        margin: 0 auto;
+    }
+
+    .portrait img {
+      width: 90%;
     }
 
     .founders-letter {

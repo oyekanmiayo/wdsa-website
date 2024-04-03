@@ -5,7 +5,7 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 40px;
-  height: 100vh;
+  min-height: 100vh;
 }
 .title {
   color: white;
@@ -19,11 +19,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  max-width: 920px;
   gap: 28px;
   color: var(--text-color);
-
   padding: 1rem;
+}
+
+.testimonials-section > p{
+  font-size: 18px;
 }
 .quote {
   width: 50px;
@@ -39,7 +43,7 @@
   border: 0.5px #4f4f4f solid;
 }
 .message {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
 }
 .name {
@@ -53,4 +57,22 @@
   font-size: 20px;
   font-weight: 400;
   word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .testimonials-section > p{
+    font-size: 14px;
+  }
+
+  .message {
+    font-size: 14px;
+  }
+  
+  .name {
+    font-size: 13px;
+  }
+
+  .position {
+    font-size: 13px;
+  }
 }

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/testimonials.css">
   <link rel="stylesheet" href="/css/founders-letter.css">
-  <link rel="stylesheet" href="/css/schedule.css">
+  <link rel="stylesheet" href="/css/curriculum.css">
   <link rel="stylesheet" href="/css/cohorts.css">
   <link
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -16,8 +16,8 @@
   />
 </head>
 <body>
-    <div class="container">
-      <nav>
+  <div class="container">
+    <nav>
     <div class="nav-bar">
       <span class="logo main-logo">
         <a href="/">
@@ -43,26 +43,26 @@
           <li><a href="/cohorts">cohorts</a></li>
           <li><a href="#testimonials">testimonials</a></li>
           <li><a href="/founders-letter">founder's note</a></li>
-          <li><a href="/schedule">schedule</a></li>
+          <li><a href="/curriculum">schedule</a></li>
         </ul>
       </div>
     </div>
   </nav>
   
-      <main>
-        <div id="content">
+    <main>
+      <div id="content">
 
 <div class="hero-banner">
   <div class="hero-text">
     <h1>
-      Learn the internals of Data <br />
+      Learn the internals of Data
       Structures & Algorithms
     </h1>
     <p>
-      At the Wolfstation DSA Program, we believe <br />
+      At the Wolfstation DSA Program, we believe
       that fundamentals are forever.
     </p>
-    <button class="cta-button" id="join-cohort">Join the next cohort</button>
+    <button class="cta-button" id="join-cohort">Join the next cohort<i class="bx bx-right-arrow-alt right-pointer"></i></button>
   </div>
 </div>
 <div class="div-program">
@@ -70,46 +70,47 @@
     
     <img src="/images/separator.svg" alt="Blue separator image" />
   </div>
-<div class="about-program" id="about">
-  <div class="program">
-    <h3>About The Program</h3>
-    <div class="program-details">
-      <div class="program-details-description">
-        <p>
-          This program is an introduction to the foundations of software
-          engineering. Our goal is to equip software engineers with a strong foundation in data structures and algorithms (DSAs) 
-          to not only succeed in technical interviews but also excel in their software engineering careers.
-        </p>
-        <button class="general-btn" id="learn-more">
-          Learn more <i class="bx bx-right-arrow-alt right-pointer"></i>
-        </button>
-      </div>
-      <div id="program">
-        <div class="program-info">
-          <span>
-            
-            <img src="/images/book.svg" alt="Blue separator image" />
-          </span>
-          <p>Weekly Course work</p>
+  <div class="about-program" id="about">
+    <div class="program">
+      <h3>About The Program</h3>
+      <div class="program-details">
+        <div class="program-details-description">
+          <p>
+            This program is an introduction to the foundations of software
+            engineering. Our goal is to equip software engineers with a strong foundation in data structures and
+            algorithms (DSAs)
+            to not only succeed in technical interviews but also excel in their software engineering careers.
+          </p>
+          <button class="general-btn" id="learn-more">
+            Learn more<i class="bx bx-right-arrow-alt right-pointer"></i>
+          </button>
         </div>
-        <div class="program-info">
-          <span>
-            
-            <img src="/images/calendar.svg" alt="Blue separator image" />
-          </span>
-          <p>12-WEEK SCHEDULE</p>
-        </div>
-        <div class="program-info">
-          <span>
-            
-            <img src="/images/people.svg" alt="Blue separator image" />
-          </span>
-          <p>PEER COLLABORATION</p>
+        <div id="program">
+          <div class="program-info">
+            <span>
+              
+              <img src="/images/book.svg" alt="Blue separator image" />
+            </span>
+            <p>Weekly Course work</p>
+          </div>
+          <div class="program-info">
+            <span>
+              
+              <img src="/images/calendar.svg" alt="Blue separator image" />
+            </span>
+            <p>12-WEEK SCHEDULE</p>
+          </div>
+          <div class="program-info">
+            <span>
+              
+              <img src="/images/people.svg" alt="Blue separator image" />
+            </span>
+            <p>PEER COLLABORATION</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 <div class="testimonials" id="testimonials">
   <div class="testimonials-info">
@@ -165,7 +166,7 @@
         </div>
       </div>
     </div>
-    <button id="read-all">
+    <button id="read-all" class="general-btn">
       Read all <i class="bx bx-right-arrow-alt right-pointer"></i>
     </button>
   </div>
@@ -174,10 +175,9 @@
   <div class="volunteers-text">
     <h3>Volunteer with us</h3>
     <p>
-      Interested in making a difference in the lives of aspiring software <br />
+      Interested in making a difference in the lives of aspiring software
       engineers? As a volunteer, you'll have the opportunity to share your
-      <br />
-      expertise and passion learning with the next generation of <br />
+      expertise and passion learning with the next generation of 
       innovators. Join our team today and make a meaningful impact!
     </p>
 
@@ -189,7 +189,7 @@
 </div>
 
 <script>
-    var join = document.getElementById("join-cohort");
+  var join = document.getElementById("join-cohort");
   join.addEventListener("click", function () {
     window.open("https://forms.gle/pRzma7VekACqhQCp8", "_blank");
   });
@@ -201,7 +201,7 @@
 
   var learn = document.getElementById("learn-more");
   learn.addEventListener("click", function () {
-    window.open("/schedule");
+    window.open("/curriculum");
   });
 
   var read = document.getElementById("read-all");
@@ -211,7 +211,7 @@
   });
 </script>
 </div>
-      </main><footer>
+    </main><footer>
   <div class="footer-container">
     <span class="logo">
       <a href="/">
@@ -232,8 +232,9 @@
   </div>
 </footer>
 </div>
-    <script src="http://localhost:1313/js/script.js"></script>
-  </body>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
 
 <!DOCTYPE html>

@@ -7,11 +7,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
+  overflow-y: scroll;
 }
 
-html,
+html, 
 body {
   background-color: var(--body-color);
   color: var(--nav-color);
@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -41,7 +41,7 @@ body {
   --body-color: #000;
   --nav-color: #000;
   --text-color: #fff;
-  --side-nav: darkorange;
+  --side-nav: #333;
   --cta-color: #ffa90a;
   --cta-hover-color: #ffba3b;
   --text-cta-color: #000;
@@ -71,7 +71,7 @@ nav {
   min-height: 5rem;
   width: 100%;
   background-color: var(--nav-color);
-  z-index: 100;
+  z-index: 1;
 }
 
 nav .nav-bar {
@@ -149,7 +149,6 @@ footer {
   height: 7rem;
   bottom: 0;
   left: 0;
-  z-index: 50;
 }
 
 footer .footer-container {
@@ -180,7 +179,7 @@ footer .footer-container {
     top: 0;
     background-color: var(--side-nav);
     padding: 1.25rem;
-    z-index: 100;
+    z-index: 10;
     transition: all 0.5s ease;
   }
 
@@ -212,6 +211,7 @@ footer .footer-container {
     display: block;
     margin-top: 1.25rem;
     color: var(--text-color);
+    font-size: 16px;
   }
 
   .nav-links li a::before {
@@ -249,7 +249,6 @@ footer .footer-container {
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 80px;
-  z-index: 100;
 
   /* transform: translate(0, -30%); */
 }
@@ -267,12 +266,13 @@ footer .footer-container {
 }
 
 .hero-text h1 {
-  font-weight: 550;
+  font-weight: 600;
   text-align: center;
   font-size: 35px;
   margin: 90px 0 20px;
   line-height: 45px;
   letter-spacing: 0.04em;
+  max-width: 600px;
 }
 
 
@@ -281,24 +281,25 @@ footer .footer-container {
   font-size: 18px;
   text-align: center;
   margin-bottom: 1.5rem;
-  line-height: 1.9rem;
+  line-height: 1.875rem;
   word-spacing: 2px;
   letter-spacing: 0.04em;
+  max-width: 400px;
 }
 
 
 .cta-button {
-  /* background-color: var(--cta-color); */
   background: linear-gradient(93.29deg, #787878 2.44%, rgba(120, 120, 120, 0) 131.15%);
   border: 1px solid #BEBEC5;
-  /* border: 0; */
   padding: 0.7rem 1.7rem;
   cursor: pointer;
   border-radius: 4px;
   color: var(--text-color);
   transition: all 0.3s ease;
-  font-size: 13px;
-
+  font-size: 16px;
+  font-family: Titillium Web;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .cta-button:hover {
@@ -311,8 +312,8 @@ footer .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
   position: absolute;
+  overflow-x: hidden;
   top: 0;
 }
 
@@ -349,8 +350,8 @@ footer .footer-container {
 .program h3 {
   letter-spacing: 1px;
   word-spacing: 4px;
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 35px;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -367,8 +368,7 @@ footer .footer-container {
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 30.42px;
-  font-size: 16px;
-  width: 90%;
+  font-size: 18px;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -378,33 +378,30 @@ footer .footer-container {
 }
 
 .general-btn {
-  padding: 12px 1.5rem;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  /* background-color: var(--body-color); */
+  width: 142px;
+  height: 48px;
+  font-size: 16px;
   background-color: transparent;
   color: var(--text-color);
-  /* opacity: 0.5; */
   border: 1px solid #787878;
   font-family: "Titillium Web", sans-serif;
-  background-image: -webkit-gradient(radial, left top, 10, 90% 0%, 150, from(#000), to(transparent));
-  background-image: -webkit-radial-gradient(left top, 150px 230px, #000, transparent);
-  background-image: -moz-radial-gradient(left top, farthest-corner, #000 0%, transparent 72%);
 }
 
 .general-btn i {
-  margin-left: 1rem;
-  font-size: 1.5rem;
+  margin-left: 0.2rem;
+  font-size: 1rem;
 }
 
 .program-info {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .program-info p {
@@ -419,19 +416,30 @@ footer .footer-container {
   .hero-text h1 {
     font-size: 1.5rem;
     line-height: 36px;
+    padding-inline: 0.2rem;
   }
 
   .hero-text p {
+    font-size: 14px;
+    padding-inline: 1rem;
+    line-height: 1.3rem;
+    max-width: 350px;
+  }
+  .cta-button {
     font-size: 13px;
   }
 
+  .program h3 {
+    font-size: 24px;
+  }
+
   .program {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem ;
   }
 
   .program-details .general-btn {
-    width: 100%;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
+    font-size: 13px;
   }
 
   .logo.main-logo img {
@@ -445,6 +453,12 @@ footer .footer-container {
   }
 }
 
+@media (min-width: 1500px){
+  .div-program {
+    padding-top: 220px;
+  }
+}
+
 .testimonials {
   width: 100%;
   background-color: var(--text-color);
@@ -455,10 +469,13 @@ footer .footer-container {
   align-items: center;
   padding: 1rem;
   padding-block: 5rem;
+  ;
 }
 
 .testimonials button {
-  padding: 14px 1.5rem;
+  /* padding: 14px 1.5rem; */
+  width: 142px;
+  height: 48px;
   border-radius: 4px;
   border: 1px solid #d6d6d6;
   display: flex;
@@ -466,16 +483,16 @@ footer .footer-container {
   align-items: center;
   cursor: pointer;
   font-weight: 600;
-  /* box-shadow: 0 0 2px 1px rgba(225, 225, 225, 0.5); */
   background-color: transparent;
-  /* opacity: 0.5; */
   color: var(--body-color);
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+
 }
 
 .testimonials i {
-  margin-left: 1rem;
-  font-size: 1.3rem;
-}
+  margin-left: 0.2rem;
+} 
 
 .testimonials-info {
   width: 80%;
@@ -484,37 +501,30 @@ footer .footer-container {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  /* z-index: 100; */
 }
 
 .testimonials-info::after {
-  content: url("/images/left-quote.png");
-  /* with class ModalCarrot ??*/
-  position: absolute;
-  /*or absolute*/
-  z-index: 10;
-  /*a number that's more than the modal box*/
+  content: url("/images/left-quote.png"); /* with class ModalCarrot ??*/
+  position: absolute; /*or absolute*/
   left: -5%;
   top: -5%;
 }
 
 .testimonials-info::before {
-  content: url("/images/right-quote.png");
-  /* with class ModalCarrot ??*/
-  position: absolute;
-  /*or absolute*/
-  z-index: 10;
-  /*a number that's more than the modal box*/
+  content: url("/images/right-quote.png"); /* with class ModalCarrot ??*/
+  position: absolute; /*or absolute*/
   right: -5%;
   bottom: 7%;
 }
 
 .testimonials-info h3 {
-  font-size: 2.3rem;
+  font-size: 35px;
   color: var(--body-color);
+  margin-bottom: 16px;
 }
 
 .testimonials-info p {
+  font-size: 18px;
   margin-bottom: 2rem;
   color: var(--body-color);
 }
@@ -532,12 +542,12 @@ footer .footer-container {
   border-radius: 8px;
   background-color: var(--text-color);
   position: relative;
-  z-index: 100;
 }
 
 .testimonies-item p {
   margin-bottom: 1rem;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .testimonies-item__author p {
@@ -572,11 +582,18 @@ footer .footer-container {
 }
 
 .volunteers-text h3 {
-  font-size: 2.3rem;
+  font-size: 35px;
   margin-bottom: 1.2rem;
 }
 
 .volunteers-text p {
+  /* margin-bottom: 2rem; */
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 30.42px;
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -587,15 +604,45 @@ footer .footer-container {
 
 @media (max-width: 780px) {
   .volunteers-text h3 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
-  .volunteers-text button {
-    width: 100%;
+  .volunteers-text p {
+    font-size: 14px;
+  }
+
+  .testimonials-info h3 {
+    font-size: 24px;
+  }
+
+  .testimonials-info p {
+    font-size: 14px;
+  }
+
+  .testimonies-item p {
+    font-size: 14px;
+  }
+
+  .testimonies-item__author p, span {
+    font-size: 13px;
+  }
+
+  .testimonials button {
+    font-size: 13px;
   }
 
   .program {
     width: 80%;
+  }
+
+  .program-details p {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .footer-container p {
+    font-size: 14px;
   }
 }
 
