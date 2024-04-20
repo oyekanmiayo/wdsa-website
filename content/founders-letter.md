@@ -31,6 +31,7 @@ Before I go, I want to recognise the Wolfstation DSA Program core team that make
 * Kehinde Ojewale ([Twitter](https://x.com/KennyOjewale))
 * Tosin Fatungase ([Twitter](https://twitter.com/oluwatosinfatun)) — Ops Lead
 * Uwakmfom Utuk ([Twitter](https://x.com/Utuk349))
+
 Thank you all so much — the program would not be possible without you. 
 
 We’re excited about the future, everyone; apply to be a student or instructor to be a part of this vision!
