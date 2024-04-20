@@ -14,7 +14,7 @@ This program was birthed out of a couple of needs I experienced firsthand. The f
 
 The second need became more apparent as I gained more experience in my career. DSAs get jested as irrelevant outside of interviews, but I have seen their relevance in different software engineering problems. Programming Languages are interpreted and compiled via tree structures. Databases store and access files via efficient tree structures. Networks are graphs. Operating Systems use linked lists, stacks, hashmaps and so on. And many problems higher up the stack also use these structures and algorithms. The point is that you need this knowledge, which this program provides, as a part of your toolbox to solve many problems well. 
 
-## Why Join Us?
+## Why Join The Program?
 
 We’ve had some success running this program in the past. In 2021, I taught two sets of people (7 in total) the internals of data structures and how to use specific algorithms over 5 and 7 weeks. In those weeks, we reviewed the structures in ~[this repo](https://github.com/oyekanmiayo/data-structures-all-langs)~ and solved questions from Leetcode and other sources. The schedule was like this: teach theory on weekends and have 1:1s throughout the week to answer each person’s questions/address specific challenges. Personalised learning was helpful as everyone faced different challenges. And the results were great: 6 out of 7 got new offers from companies like Bloomberg, Microsoft and Amazon.
 
@@ -39,6 +39,6 @@ It’s 2024, and as a new cohort beckons, our program’s vision bears repeating
 
 We’re excited about the future, everyone; apply to be a student or instructor to be a part of this vision!
 
-Sincerely, </br>
-Ayomide Oyekanmi </br>
+Sincerely, </br>  
+Ayomide Oyekanmi </br>  
  **Founder, Wolfstation DSA Program**
