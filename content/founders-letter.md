@@ -36,6 +36,6 @@ Thank you all so much — the program would not be possible without you.
 
 We’re excited about the future, everyone; apply to be a student or instructor to be a part of this vision!
 
-Sincerely,
-Ayomide Oyekanmi
+Sincerely, </br>
+Ayomide Oyekanmi </br>
  **Founder, Wolfstation DSA Program**
