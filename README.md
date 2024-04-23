@@ -3,5 +3,8 @@
 To run 
 
 ```
-hugo server --config=hugo.toml
+hugo serve
+hugo server
+# For full rebuilds on change
+hugo server --disableFastRender
 ```

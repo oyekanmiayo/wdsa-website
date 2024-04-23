@@ -1,0 +1,24 @@
+baseURL: 'https://dsa.wolfstation.org/'
+languageCode: 'en-us'
+
+theme: "structure"
+mediaTypes:
+  image/svg+xml:
+    suffixes:
+      - svg
+
+title: 'Wolfstation DSA Program'
+author: "Ayomide Oyekanmi"
+copyright: "Copyright © 2024, Ayomide Oyekanmi."
+
+params:
+  description: "Learn the internals of data structures and algorithms"
+  title: "Wolfstation DSA Program"
+  images:
+  - "images/wdsap.png"
+  favicon: "images/favicon-96x96.png"
+  social:
+    twitter: "wdsaprogram"
+  meta:
+    favicon: true
+
