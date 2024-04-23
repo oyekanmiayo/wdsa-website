@@ -1,7 +1,0 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'Wolfstation DSA Program'
-theme = "structure"
-[mediaTypes."image/svg+xml"]
-suffixes = ["svg"]
-

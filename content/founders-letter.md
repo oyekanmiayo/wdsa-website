@@ -3,6 +3,7 @@ title: "Founder's Letter"
 date: 2024-04-20T15:09:00+01:00
 draft: false
 layout: founders-letter
+images: ["images/founder.png"]
 ---
 
 Hi There,
